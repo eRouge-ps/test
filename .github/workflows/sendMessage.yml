@@ -1,0 +1,14 @@
+# This is a basic workflow to help you get started with Actions
+
+name: Microsoft Teams Webhook Notifications
+uses: dhollerbach/actions.send-message-to-ms-teams@1.0.10
+with:
+    webhook: 'https://outlook.office.com/webhook/d2ee2262-c45a-4833-b609-125dbcf79769@534272e4-8556-4ad9-926f-cd0ff7ba288d/IncomingWebhook/1e806c321bd84e09bcd1d5ce52880c28/12314bcf-c1fa-45f0-87fb-cdd68d2ac165'
+    message: 'W00t it werked!'
+# Controls when the action will run. Triggers the workflow on push or pull request
+# events but only for the master branch
+on:
+  push:
+    branches: [ master ]
+  pull_request:
+    branches: [ master ]
